@@ -1,0 +1,164 @@
+/* Global Styles
+------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h2 {
+    font-size: 45px;
+}
+h1, h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
+.divider > section {
+    border-bottom: 1px solid black;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* Profile
+------------------*/
+header {
+    background: #006989;
+    color: white;
+}
+
+/* Images
+------------------*/
+.images {
+    background: #EAEBED;
+}
+.images a {
+    color: black;
+}
+.images .btn {
+    color: white;
+    background: #2D1E2F;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.images .btn:hover {
+    background: rgba(0,105,137,80%);
+}
+.image-item {
+    overflow: hidden;
+}
+
+.image-item h3 {
+    margin-top: 0;
+}
+
+/* Work Experience
+------------------*/
+.work {
+    background: #A3BAC3;
+}
+
+.work ol {
+    list-style-type: none;
+}
+
+/* Education
+------------------*/
+.education {
+    background-image: url(../images/joannakosinska.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding-bottom: 100px;
+}
+.education p {
+    width: 60%;
+}
+
+/* Contact Info
+------------------*/
+footer {
+    background: #006989;
+    color: white;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+
+/* Responsive
+------------------*/
+@media screen and (min-width: 575px){
+    header, footer {
+        text-align: center;
+    }
+    .image-item img {
+        float: left;
+        margin-right: 40px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 40px;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 574px){
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a {
+        padding: 5px;
+    }
+}

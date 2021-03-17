@@ -1,0 +1,109 @@
+body {
+    background-color: #344966;
+}
+
+#searcharea {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #B4CDED;
+    padding: 10px;
+    width: 30%;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+#searcharea label {
+    font: bold 1.3em Roboto;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #344966;
+}
+
+#searcharea p {
+    margin: 0;
+    line-height: 1em;
+    padding-bottom: 5px;
+}
+
+#searcharea input {
+    width: 80%;
+    text-align: center;
+}
+
+#update {
+    font-family: Roboto, "Times New Roman", Times, serif;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px dotted #B4CDED;
+}
+
+#update ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#update ul li {
+    width: 100%;
+    background-color: #EEE;
+    padding: 0 20px 10px;
+    height: 110px;
+    overflow: hidden;
+    border-bottom: 1px dotted #CCC;
+
+    -webkit-animation: myanim 1s;
+    -moz-animation: myanim 1s;
+    -o-animation: myanim 1s;
+    animation: myanim 1s;
+
+    -webkit-transition: height 0.3s ease-out;
+    -moz-transition: height 0.3s ease-out;
+    -o-transition: height 0.3s ease-out;
+    transition: height 0.3s ease-out;
+}
+
+#update li:hover {
+    background-color: #FFFCE5;
+    min-height: 110px;
+    height: 250px;
+    overflow: visible;
+}
+
+#update h2 {
+    font-size: 1.2em;
+    padding: 20px 0 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #344966;
+    border-bottom: 1px dotted #CCC;
+    margin: 0 0 10px;
+}
+
+#update img {
+    float: left;
+    width: 80px;
+    margin-right: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+@-webkit-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-moz-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@-o-keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes myanim {
+    0% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+}
