@@ -1,0 +1,25 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Christen De Ocampo",
+	"description": "Legends of Tomorrow is a legendary CW TV show",
+	"keywords": [
+		"constantine",
+		"gary",
+		"sarah",
+		"ava",
+		"freecodecamp"
+	],
+	"license": "MIT",
+	"version": "6.0",
+	"dependencies": {
+    "express": "^4.14.0"
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://idontknow/todo.git"
+	}
+}

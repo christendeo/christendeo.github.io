@@ -18,6 +18,23 @@ header {
     background-color: #2C514C;
     color: white;
 }
+.menu ul {
+    display: inline-flex;
+    margin: 50px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: #2C514C;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+}
+.menu {
+    text-align: center;
+}
 h1, h2, h3, p {
     text-align: center;
 }
@@ -30,6 +47,12 @@ h2 {
 }
 h3 {
     font-weight: lighter;
+}
+p {
+    text-align: left;
+}
+.h2-inside {
+    text-align: left;
 }
 a:link {
     color: #2C514C;
