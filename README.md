@@ -23,7 +23,6 @@
 2. Under Links, click *Shopper App* to download my shopper app project.
 3. Unzip the folder and open the folder in Webstorm (or any code editor of your choice).
 4. Open Terminal or Command Prompt and be sure you're in the directory of the **shopper** folder.
-5. Type npm start dev and enter. If successful, you should see an output similar to below: <img width="1150" alt="Screen Shot 2021-05-09 at 5 22 08 PM" src="https://user-images.githubusercontent.com/44532399/117587283-1ae5c100-b0eb-11eb-8159-c1481b93a09f.png">
+5. Type **npm start dev** and enter. If successful, you should see an output similar to below: <img width="1150" alt="Screen Shot 2021-05-09 at 5 22 08 PM" src="https://user-images.githubusercontent.com/44532399/117587283-1ae5c100-b0eb-11eb-8159-c1481b93a09f.png">
 6. Go to your web browser and type in **localhost:3000** in the URL. The page will display as shown below: <img width="998" alt="Screen Shot 2021-05-09 at 5 22 42 PM" src="https://user-images.githubusercontent.com/44532399/117587293-318c1800-b0eb-11eb-9e7f-4129cf4982b7.png">
-7. Enjoy shopping :+1: 
-
+7. Enjoy shopping :+1:
