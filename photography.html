@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>CS 355 Home Page</title>
+    <link href="cdoDash.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="fun-stuff.js" defer></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+</head>
+<body>
+<div class="photography-container">
+    <div class="navbar">
+        <img src="" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="assignments.html">ASSIGNMENTS</a></li>
+                <li><a href="linkedin-notes.html">NOTES</a></li>
+                <li><a href="photography.html" class="active">PHOTOGRAPHY</a></li>
+                <li><a href="about-me.html">ABOUT ME</a></li>
+            </ul>
+        </nav>
+        <img src="img/whitemenu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="row">
+        <div class="col-1" id="photo-col">
+            <h2>Photography</h2>
+            <h3>Gallery</h3>
+            <p>Here are some photos I took in my PHOTO165 Photography course:</p>
+            <div class="full-img" id="fullImgBox">
+                <img src="img/christendeo_photos/Christen_Final_01.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery">
+                <img src="img/christendeo_photos/Christen_Final_01.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_02.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_03.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_04.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_05.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_06.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_07.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_08.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_09.jpg" onclick="openFullImg(this.src)">
+                <img src="img/christendeo_photos/Christen_Final_10.jpg" onclick="openFullImg(this.src)">
+            </div>
+        </div>
+<!--        <div class="col-2">-->
+<!--            <img src="" class="technology">-->
+<!--            <div class="color-box"></div>-->
+<!--        </div>-->
+    </div>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/christendeo1010/"><img src="img/LinkedIn.png"></a>
+        <a href="https://www.instagram.com/deo.chris10/"><img src="img/Instagram.png"></a>
+    </div>
+</div>
+</body>
+</html>

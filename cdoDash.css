@@ -59,6 +59,20 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+.photography-container {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("img/pexels-tirachard-kumtanom-733853.jpeg");
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
 .navbar {
     width: 100%;
     display: flex;
@@ -136,6 +150,12 @@ nav ul li a.active {
     margin: 30px 0;
     font-size: 20px;
 }
+.col-1 ul.main-list{
+    list-style-type: square;
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
 button {
     width: 140px;
     border: 0;
@@ -166,14 +186,73 @@ button:hover {
     display: flex;
     align-items: center;
 }
+.col-2 .profile-pic {
+    width: 60%;
+    padding-left: 10%;
+}
+.color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#1E6E12, #45A700);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
 .social-links img {
-    height: 30px;
+    height: 45px;
     margin: 20px;
     cursor: pointer;
 }
 .social-links {
     text-align: center;
 }
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover {
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-content: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img {
+    /*width: 90%;*/
+    /*max-width: 500px;*/
+    /*max-height: 500px;*/
+}
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+/*#photo-col{*/
+/*    flex-basis: 20%;*/
+/*}*/
 @media only screen and (max-width: 700px) {
     nav ul {
         width: 100%;
@@ -205,5 +284,21 @@ button:hover {
     .col-2 {
         flex-basis: 100%;
         margin-bottom: 50px;
+    }
+    .col-2 .profile-pic {
+        width: 70%;
+        padding-left: 0;
+    }
+    .color-box {
+        transform: translateX(75px);
+    }
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col-1 h2 {
+        font-size: 35px;
+    }
+    .col-1 h3 {
+        font-size: 15px;
     }
 }

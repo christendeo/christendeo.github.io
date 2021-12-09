@@ -7,3 +7,14 @@ function togglemenu() {
         menuList.style.maxHeight = "0px";
     }
 }
+
+var fullImgBox = document.getElementById("fullImgBox")
+var fullImg = document.getElementById("fullImg")
+function openFullImg(picture) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = picture;
+}
+
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
